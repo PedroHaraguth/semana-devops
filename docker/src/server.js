@@ -1,10 +1,12 @@
 // Add this to the very top of the first file loaded in your app
+// Add this to the very top of the first file loaded in your app
 var apm = require('elastic-apm-node').start({
-  serviceName: 'launch-store',
-  secretToken: 'nrw6so4TqXTe3BC2N1',
-  serverUrl: 'https://3ac6a57e51374759955f74f1070ddda2.apm.us-east-1.aws.cloud.es.io:443',
+  serviceName: 'launchstore',
+  secretToken: 'fSEJy1tYJ8h1YiYP0q',
+  serverUrl: 'https://2f20549b95034998acefbc98662f7fb5.apm.us-central1.gcp.cloud.es.io:443',
   environment: 'production'
 })
+
 const express = require('express');
 const nunjucks = require('nunjucks');
 const methodOverride = require('method-override');

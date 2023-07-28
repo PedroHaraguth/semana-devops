@@ -2,10 +2,12 @@ FROM node
 
 COPY . /app
 
+#nivel de imagem
 WORKDIR /app
 RUN npm install
 RUN npm install elastic-apm-node --save
 
+# nivel de execucao
 CMD [ "npm", "start" ]
 
 EXPOSE 80
